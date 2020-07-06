@@ -6,7 +6,7 @@
 }
 
 body {
-	font-family: Arial;
+	font-family: Arial, pixel;
 	font-size: 1.2rem;
 	line-height: 1.6em;
 	margin: 0;
@@ -35,7 +35,7 @@ p {
 
 header {
 	background: rgba(5,5,5,0.6);
-	color: white;
+	color: black;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -58,20 +58,20 @@ header a {
 	padding: 2px 0;
 }
 
+.lnr-menu {
+	display: none;
+}
+
 .logo {
 	font-family: pixel;
-	font-size: 18px;
+	font-size: 25px;
 }
 
 .logo1 {
 	text-transform: uppercase;
 	font-family: Calibri;
-	font-size: 14px;
 	text-decoration: none;
-}
-
-.lnr-menu {
-	display: none;
+	width: 20px;
 }
 
 .nav ul {
@@ -108,7 +108,7 @@ main {
 .imagen {
 	display: grid;
 	grid: repeat(minmax(5em, 14.5em)) / auto;
-  	padding: 0em 20em;
+  	padding: 0em 10em;
   	grid-gap: 2em;
 }
 
@@ -148,10 +148,15 @@ footer a {
 }
 
 @media only screen and (max-width: 767px) {
+	header {
+		color: black;
+	}
+
 	.lnr-menu {
 		display: block;
 		cursor: pointer;
 		padding: 0.5rem 1rem;
+		color: black;
 	}
 
 	.nav {
@@ -181,6 +186,14 @@ footer a {
 
 	.nav ul li a:hover {
 		background: #4a4a4a;
+	}
+
+	.imagen {
+		width: 100%;
+	}
+
+	footer {
+		width: 260%;
 	}
 
 }
